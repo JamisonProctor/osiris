@@ -6,6 +6,7 @@ import { createPool } from '@/lib/fetch-pool';
 
 export const maxDuration = 60;
 import { fetchAsfinagCameras } from './asfinag';
+import { fetchFotoWebcamCameras } from './fotowebcam';
 import { fetchNetherlandsCameras } from './netherlands';
 import { fetchBulgariaCameras } from './bulgaria';
 import { fetchGreeceCameras } from './greece';
@@ -453,6 +454,7 @@ const RAW_REGION_FETCHERS: Record<string, RegionFetcher> = {
   'czechia': fetchCzechiaCameras,
   'slovakia': fetchSlovakiaCameras,
   'germany': fetchGermanyCameras,
+  'fotowebcam': fetchFotoWebcamCameras,
   'france': fetchFranceCameras,
   'spain': fetchSpainCameras,
   'poland': fetchPolandCameras,
